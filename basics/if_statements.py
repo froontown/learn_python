@@ -32,3 +32,62 @@ suv = '4runner'
 if suv not in cars:
 	print(suv.title() + ' is not in cars') # 4Runner is not in cars
 
+# if else && if-elif-else chains:
+age = 17
+
+if age >= 18:
+	print("You can vote, yo!")
+else:
+	print("Can't vote yet, yo!")
+
+age_2 = 12
+
+if age < 4:
+	print("Your ticket is free!")
+elif age < 18:
+	print ("Your ticket is $5!")
+else:
+	print("Your ticket is $10!")
+
+# Practice:
+alien_color = 'green'
+
+if alien_color == 'green':
+	print('Player earned 5 points!')
+elif alien_color == 'red':
+	print('Player earned 10 points!')
+else:
+	print('Player earned 15 points!')
+
+# Check for special items:
+# This is a contrived example of a pizza shop that doesn't have a certain topping during a `for` loop:
+
+toppings = ['mushrooms', 'pepperoni', 'green peppers', 'anchovies']
+
+for topping in toppings:
+	if topping == 'anchovies':
+		print(f"Sorry, we don't got no {topping}.")
+	else:
+		print(f'Added {topping}!')
+print("\nPizza's all done!")
+
+# Check that a list isn't empty:
+
+empty = []
+
+if empty:
+	print("This won't output")
+else:
+	print("List is empty")
+
+# Checking through multiple lists:
+cars = ['mustang', 'viper', 'kitt', 'delorean']
+others = ['toaster', 'hippo', 'rhino', 'kitt']
+
+for other in others:
+	if other in cars:
+		print(f'{other} is in the list')
+	else:
+		print(f'{other} is not in the list')
+
+print("\n List's all done!")
