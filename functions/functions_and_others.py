@@ -78,3 +78,9 @@ completed_models = []
 
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+
+# If you don't want to lose the original list, (in this case, `unprinted_designs`,) copy it first:
+print_models(unprinted_designs[:], completed_models)
+
+
+
