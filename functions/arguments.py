@@ -22,14 +22,4 @@ describe_animal(name='chester', animal='cheetah')
 
 def fullName(firstName, lastName, middleName = ''):
 	"""Returns a formatted, full name."""
-	if middleName:
-		full_name = f"{firstName} {middleName} {lastName}"
-	else:
-		full_name = f"{firstName} {lastName}"
-	return full_name.title()
-
-musician = fullName('jimi', 'hendrix')
-print(musician)
-
-musician2 = fullName('john', 'hooker', 'lee')
-print(musician2)
+	
