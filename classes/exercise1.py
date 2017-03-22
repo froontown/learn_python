@@ -3,11 +3,11 @@
 # Add a number of customers via a method: 			  [X]
 # Use an increment method to the number served:		  [X]
 
-# Make a User class with a first and last name:       [ ]
-# Make a method that describes the User:              [ ]
-# Make a method that greetrs the User:                [ ]
-# Count how many times a User logs in:				  [ ]
-# Create a way to reset the login counter:            [ ]
+# Make a User class with a first and last name:       [X]
+# Make a method that describes the User:              [X]
+# Make a method that greetrs the User:                [X]
+# Count how many times a User logs in:				  [X]
+# Create a way to reset the login counter:            [X]
 
 
 class Restaurant():
