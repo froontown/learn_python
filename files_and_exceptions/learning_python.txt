@@ -1,0 +1,3 @@
+I am learning Python.
+With Python, I can pretty much do the exact same stuff as I can with Ruby!
+Python Python Python go Python.
