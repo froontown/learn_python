@@ -1,4 +1,5 @@
 # Making a class:
+from IPython import embed
 
 class Dog():
 	"""A simple dog class"""
@@ -11,6 +12,7 @@ class Dog():
 	def sit(self):
 		"""Simulate a dog responding to the sit command."""
 		print(f"{self.name.title()} is now sitting.")
+		embed()
 
 	def roll_over(self):
 		"""Simulate a dog responding to the roll over command."""
