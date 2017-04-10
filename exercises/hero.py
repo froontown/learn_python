@@ -15,6 +15,13 @@ class Hero():
         self.rect.centerx = self.screen_rect.centerx
         self.rect.centery = self.screen_rect.centery
 
+        self.moving_right = False
+
+    def update(self):
+        """Going to check the movement of the hero."""
+        if self.moving_right:
+            self.rect.centerx += 1
+
     def blitme(self):
         """Draws the hero!"""
         self.screen.blit(self.image, self.rect)

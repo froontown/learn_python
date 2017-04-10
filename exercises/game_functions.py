@@ -10,7 +10,11 @@ def check_events(hero):
         # Let's make the dude run to the right!!!
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
-                hero.rect.centerx += 3
+                hero.moving_right = True
+
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_RIGHT:
+                hero.moving_right = False
 
 def update_screen(ai_settings, screen, hero):
     """Update the screen."""

@@ -17,6 +17,7 @@ def run():
     while True:
 
         gf.check_events(hero)
+        hero.update()
         gf.update_screen(ai_settings, screen, hero)
 
         # Not going to refactor for the sake of practice.
