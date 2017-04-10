@@ -3,10 +3,11 @@ import pygame
 class Hero():
     """A class for the main character."""
 
-    def __init__(self, screen):
+    def __init__(self, ai_settings, screen):
         """Initialize the Hero!"""
         self.screen = screen
-        
+        self.ai_settings = ai_settings
+
         self.image = pygame.image.load('assets/images/knight.png')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
