@@ -20,14 +20,4 @@ def run():
         hero.update()
         gf.update_screen(ai_settings, screen, hero)
 
-        # Not going to refactor for the sake of practice.
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
-        pygame.display.flip()
-
-        hero.blitme()
-
-        pygame.display.flip()
-
 run()

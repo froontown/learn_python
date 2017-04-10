@@ -7,19 +7,24 @@ def check_events(hero):
         if event.type == pygame.quit:
             sys.exit()
 
-        # Let's make the dude run to the right!!!
+        # Let's make the hero run to the right and left!!!!
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 hero.moving_right = True
+            elif event.key == pygame.K_LEFT:
+                hero.moving_left = True
 
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_RIGHT:
                 hero.moving_right = False
+            elif event.key == pygame.K_LEFT:
+                hero.moving_left = False
+
 
 def update_screen(ai_settings, screen, hero):
     """Update the screen."""
     # Redraw the screen during each pass through the loop
-    # screen.fill(ai_settings.bg_color)
+    # screen.fill(ai_settings.bg_color) (not using a color)
     hero.blitme()
 
     # Display the most recently rendered screen
